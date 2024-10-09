@@ -1,0 +1,11 @@
+namespace ZXamlIslands
+{
+    [default_interface]
+    runtimeclass TestPage : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        TestPage();
+
+		String PersonName;
+		String PersonTitle;
+    }
+}

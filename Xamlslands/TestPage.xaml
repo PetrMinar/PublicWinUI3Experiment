@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="ZXamlIslands.TestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZXamlIslands"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+		Background="Gray">
+
+	<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<TreeView x:Name="myTreeView" CanDragItems="True" AllowDrop="True">
+			<TreeView.RootNodes>
+				<TreeViewNode Content="Flavors">
+					<TreeViewNode.Children>
+						<TreeViewNode Content="Vanilla"/>
+					</TreeViewNode.Children>
+				</TreeViewNode>
+			</TreeView.RootNodes>
+		</TreeView>
+		
+		<Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+		
+		<StackPanel Name = "Display">
+			<StackPanel Orientation = "Horizontal" Margin = "50, 50, 0, 0">
+				<TextBlock Text = "Name: " Margin = "10" Width = "100" />
+				<TextBlock Margin = "10" Width = "100" Text = "{x:Bind PersonName, Mode=OneWay}" />
+			</StackPanel>
+
+			<StackPanel Orientation = "Horizontal" Margin = "50,0,50,0">
+				<TextBlock Text = "Title: " Margin = "10" Width = "100" />
+				<TextBlock Margin = "10" Width = "100" Text = "{x:Bind PersonTitle, Mode=OneWay}" />
+			</StackPanel>
+		</StackPanel>
+
+		<StackPanel>
+			<ComboBox Name = "comboBox"  Margin = "50" Width = "100">
+				<ComboBoxItem Content = "Green" />
+				<ComboBoxItem Content = "Yellow" IsSelected = "True" />
+				<ComboBoxItem Content = "Orange" />
+			</ComboBox>
+
+			<TextBox  Name = "textBox" Margin = "50"
+         Width = "100" Height = "23" VerticalAlignment = "Top"
+         Text  = "{Binding ElementName = comboBox, Path = SelectedItem.Content, Mode = TwoWay, UpdateSourceTrigger = PropertyChanged}"
+         Background = "{Binding ElementName = comboBox, Path = SelectedItem.Content}">
+			</TextBox>
+
+		</StackPanel>
+
+	</StackPanel>
+
+	<!-- 
+	<Grid Padding="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="50"/>
+		</Grid.RowDefinitions>
+		<StackPanel Orientation="Horizontal" Grid.Row="0">
+			<Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+			<TextBox Text="Text goes here" Margin="10" />
+		</StackPanel>
+		<WebView2 Grid.Row="1" Source="http://bing.com" />
+		<Button Grid.Row="2">Last Button</Button>		
+	</Grid>
+-->
+</Page>
