@@ -160,6 +160,10 @@
     <ClInclude Include="TestPage.xaml.h">
       <DependentUpon>TestPage.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="TestViewModel.h">
+      <DependentUpon>TestViewModel.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="XamlIslands.h" />
     <ClInclude Include="XamlIslandsApp.xaml.h">
       <DependentUpon>XamlIslandsApp.xaml</DependentUpon>
@@ -178,6 +182,10 @@
     <ClCompile Include="TestPage.xaml.cpp">
       <DependentUpon>TestPage.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="TestViewModel.cpp">
+      <DependentUpon>TestViewModel.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="XamlIslands.cpp" />
     <ClCompile Include="XamlIslandsApp.xaml.cpp">
       <DependentUpon>XamlIslandsApp.xaml</DependentUpon>
@@ -189,6 +197,9 @@
   <ItemGroup>
     <Midl Include="TestPage.idl">
       <DependentUpon>TestPage.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="TestViewModel.idl">
+      <SubType>Designer</SubType>
     </Midl>
     <Midl Include="XamlIslandsApp.idl">
       <DependentUpon>XamlIslandsApp.xaml</DependentUpon>

@@ -38,6 +38,9 @@
     <Midl Include="XamlIslandsApp.idl">
       <Filter>Source Files</Filter>
     </Midl>
+    <Midl Include="TestViewModel.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
