@@ -2,7 +2,7 @@
 
 #include "TestPage.g.h"
 
-namespace winrt::ZXamlIslands::implementation
+namespace winrt::XamlIslands::implementation
 {
     struct TestPage : TestPageT<TestPage>
     {
@@ -25,7 +25,7 @@ namespace winrt::ZXamlIslands::implementation
     };
 }
 
-namespace winrt::ZXamlIslands::factory_implementation
+namespace winrt::XamlIslands::factory_implementation
 {
     struct TestPage : TestPageT<TestPage, implementation::TestPage>
     {

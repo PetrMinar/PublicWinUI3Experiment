@@ -1,4 +1,4 @@
-namespace ZXamlIslands
+namespace XamlIslands
 {
     [default_interface]
     runtimeclass TestPage : Microsoft.UI.Xaml.Controls.Page, Microsoft.UI.Xaml.Data.INotifyPropertyChanged

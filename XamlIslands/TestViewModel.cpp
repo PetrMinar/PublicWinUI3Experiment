@@ -4,7 +4,7 @@
 #include "TestViewModel.g.cpp"
 #endif
 
-namespace winrt::ZXamlIslands::implementation
+namespace winrt::XamlIslands::implementation
 {
     int32_t TestViewModel::MyProperty()
     {

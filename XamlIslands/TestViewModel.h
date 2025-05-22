@@ -2,7 +2,7 @@
 
 #include "TestViewModel.g.h"
 
-namespace winrt::ZXamlIslands::implementation
+namespace winrt::XamlIslands::implementation
 {
     struct TestViewModel : TestViewModelT<TestViewModel>
     {
@@ -13,7 +13,7 @@ namespace winrt::ZXamlIslands::implementation
     };
 }
 
-namespace winrt::ZXamlIslands::factory_implementation
+namespace winrt::XamlIslands::factory_implementation
 {
     struct TestViewModel : TestViewModelT<TestViewModel, implementation::TestViewModel>
     {

@@ -10,6 +10,6 @@
 // add headers that you want to pre-compile here
 #include "framework.h"
 
-#include "../Xamlslands/XamlIslands.h"
+#include "../XamlIslands/XamlIslands.h"
 
 #endif //PCH_H

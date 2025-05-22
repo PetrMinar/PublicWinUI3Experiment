@@ -1,4 +1,4 @@
-namespace ZXamlIslands
+namespace XamlIslands
 {
     [bindable]
     [default_interface]

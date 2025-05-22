@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "XamlIslands.h"
-#include "XamlIslandsApp.xaml.h" // for 'winrt::make<winrt::ZXamlIslands::implementation::XamlIslandApp>()'
+#include "XamlIslandsApp.xaml.h" // for 'winrt::make<winrt::XamlIslands::implementation::XamlIslandApp>()'
 #include <Microsoft.UI.Dispatching.Interop.h> // for ContentPreTranslateMessage
 
 namespace XamlIslands
@@ -13,7 +13,7 @@ namespace XamlIslands
 
 	static auto& XxxIslandApp()
 	{
-		static auto MyIslandApp{ winrt::make<winrt::ZXamlIslands::implementation::XamlIslandApp>() };
+		static auto MyIslandApp{ winrt::make<winrt::XamlIslands::implementation::XamlIslandApp>() };
 		// NOTE: Intentionally not thread_local
 
 		// NOTE: DO NOT call winrt::Microsoft::UI::Xaml::Hosting::WindowsXamlManager::InitializeForCurrentThread() directly. It installs "built in"
@@ -93,7 +93,7 @@ namespace XamlIslands
 				break;
 
 			case PageT::TestPage:
-				LocalIsland->m_DesktopSource.Content(winrt::ZXamlIslands::TestPage{});
+				LocalIsland->m_DesktopSource.Content(winrt::XamlIslands::TestPage{});
 				break;
 
 			default:

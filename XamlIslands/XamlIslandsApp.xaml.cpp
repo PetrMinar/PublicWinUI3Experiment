@@ -4,7 +4,7 @@
 using namespace winrt;
 using namespace Windows::UI::Xaml;
 
-namespace winrt::ZXamlIslands::implementation
+namespace winrt::XamlIslands::implementation
 {
 	void XamlIslandApp::OnLaunched(winrt::Microsoft::UI::Xaml::LaunchActivatedEventArgs const&)
 	{

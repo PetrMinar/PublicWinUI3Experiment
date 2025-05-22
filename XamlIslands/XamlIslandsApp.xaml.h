@@ -2,7 +2,7 @@
 #include "XamlIslandsApp.xaml.g.h"
 #include <winrt/Microsoft.UI.Xaml.Hosting.h>
 
-namespace winrt::ZXamlIslands::implementation
+namespace winrt::XamlIslands::implementation
 {
 	struct XamlIslandApp : AppT<XamlIslandApp>
 	{
